@@ -1,0 +1,139 @@
+/* Estilos generales */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Secciones */
+.seccion {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.seccion h2 {
+  color: #8e44ad;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.seccion p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+/* Botón */
+#btnDescubrir {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#btnDescubrir:hover {
+  background: #8e44ad;
+  transform: scale(1.1);
+}
+
+/* Galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Formulario */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+form button {
+  background: #8e44ad;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #3498db;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+  font-size: 0.9em;
+}
